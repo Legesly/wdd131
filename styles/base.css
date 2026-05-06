@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com");
+/* Base Styles */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,6 +8,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background: #003366;
   color: white;
@@ -21,6 +22,7 @@ header {
   font-weight: bold;
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;
@@ -41,6 +43,7 @@ nav a:hover {
   color: #003366;
 }
 
+/* Main Layout */
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -49,6 +52,7 @@ main {
   gap: 2rem;
 }
 
+/* Cards */
 .card {
   background: white;
   padding: 1rem;
@@ -62,6 +66,7 @@ main {
   border-radius: 6px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
