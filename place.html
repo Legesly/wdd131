@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghana — Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Ghana</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/ghana-small.webp" media="(max-width: 500px)">
+        <source srcset="images/ghana-medium.webp" media="(max-width: 1000px)">
+        <img src="images/ghana-large.webp" alt="Ghana Landscape">
+      </picture>
+    </section>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Capital:</strong> Accra</li>
+        <li><strong>Population:</strong> 34 million</li>
+        <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
+        <li><strong>Region:</strong> West Africa</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="icon"></span></h2>
+
+      <p><strong>Temperature:</strong> <span id="temp">82</span> °F</p>
+      <p><strong>Wind Speed:</strong> <span id="speed">10</span> mph</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Ghana Country Page</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
