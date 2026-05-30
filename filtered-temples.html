@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="A picture album of temples created for WDD 131. Includes images, captions, and responsive design.">
+  <meta name="author" content="Humphrey Darko">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filtered Temples | WDD 131</title>
+
+  <!-- Updated CSS links -->
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <h1>Temple Album</h1>
+      <button id="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#" data-filter="home">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Filtered Temple Album</h2>
+
+    <!-- IMPORTANT: This is where JS will inject the cards -->
+    <section id="temple-cards" class="gallery"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Temple Album | Humphrey Darko</p>
+    <p>Last modified: <span id="lastmodified"></span></p>
+  </footer>
+
+  <!-- Updated JS link -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
