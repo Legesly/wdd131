@@ -5,17 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Review Submitted</title>
   <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/review.js" defer></script>
+  <meta name="description" content="Product review confirmation page for WDD131.">
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+
+      // Display submitted values
+      document.getElementById("product").textContent = params.get("product");
+      document.getElementById("rating").textContent = params.get("rating");
+      document.getElementById("installed").textContent = params.get("installed");
+      document.getElementById("review").textContent = params.get("review");
+      document.getElementById("name").textContent = params.get("name");
+
+      // Features (checkboxes)
+      const features = params.getAll("features");
+      document.getElementById("features").textContent = features.join(", ");
+
+      // Confirmation number
+      const confirmation = Math.floor(Math.random() * 1000000000);
+      document.getElementById("confirmation").textContent = confirmation;
+
+      // localStorage review counter
+      let count = Number(localStorage.getItem("reviewCount")) || 0;
+      count++;
+      localStorage.setItem("reviewCount", count);
+      document.getElementById("reviewCount").textContent = count;
+    });
+  </script>
 </head>
 
 <body>
   <header>
-    <h1>Thank You!</h1>
+    <h1>Thank You for Your Review!</h1>
   </header>
 
   <main>
-    <p>Your review has been submitted successfully.</p>
-    <p>Total reviews submitted: <span id="reviewCount"></span></p>
+    <section>
+      <h2>Review Summary</h2>
+      <p><strong>Product:</strong> <span id="product"></span></p>
+      <p><strong>Rating:</strong> <span id="rating"></span></p>
+      <p><strong>Date Installed:</strong> <span id="installed"></span></p>
+      <p><strong>Features Selected:</strong> <span id="features"></span></p>
+      <p><strong>Your Review:</strong> <span id="review"></span></p>
+      <p><strong>Reviewer Name:</strong> <span id="name"></span></p>
+      <p><strong>Confirmation Number:</strong> <span id="confirmation"></span></p>
+    </section>
+
+    <section>
+      <h2>Review Counter</h2>
+      <p>Total reviews submitted: <span id="reviewCount"></span></p>
+    </section>
   </main>
 
   <footer>
