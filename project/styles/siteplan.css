@@ -1,0 +1,27 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #F2F2F2;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #C8102E;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #006B3F;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
