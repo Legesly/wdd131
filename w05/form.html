@@ -15,48 +15,50 @@
   </header>
 
   <main>
-    <form method="get" action="review.html">
+    <div class="form-container">
+      <form method="get" action="review.html">
 
-      <label for="product">Product Name <span class="required">*</span></label>
-      <select id="product" name="product" required>
-        <option value="" disabled selected>Select a Product...</option>
-      </select>
+        <label for="product">Product Name <span class="required">*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product...</option>
+        </select>
 
-      <fieldset>
-        <legend>Overall Rating <span class="required">*</span></legend>
+        <fieldset>
+          <legend>Overall Rating <span class="required">*</span></legend>
 
-        <label><input type="radio" name="rating" value="1" required> ☆</label>
-        <label><input type="radio" name="rating" value="2"> ☆☆</label>
-        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
-      </fieldset>
+          <label><input type="radio" name="rating" value="1" required> ☆</label>
+          <label><input type="radio" name="rating" value="2"> ☆☆</label>
+          <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+          <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+          <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+        </fieldset>
 
-      <label for="installed">Date of Installation <span class="required">*</span></label>
-      <input type="date" id="installed" name="installed" required>
+        <label for="installed">Date of Installation <span class="required">*</span></label>
+        <input type="date" id="installed" name="installed" required>
 
-      <fieldset>
-        <legend>Useful Features (check all that apply)</legend>
+        <fieldset>
+          <legend>Useful Features (check all that apply)</legend>
 
-        <label><input type="checkbox" name="features" value="Easy Install"> Easy Install</label>
-        <label><input type="checkbox" name="features" value="Durable"> Durable</label>
-        <label><input type="checkbox" name="features" value="Energy Efficient"> Energy Efficient</label>
-        <label><input type="checkbox" name="features" value="Affordable"> Affordable</label>
-      </fieldset>
+          <label><input type="checkbox" name="features" value="Easy Install"> Easy Install</label>
+          <label><input type="checkbox" name="features" value="Durable"> Durable</label>
+          <label><input type="checkbox" name="features" value="Energy Efficient"> Energy Efficient</label>
+          <label><input type="checkbox" name="features" value="Affordable"> Affordable</label>
+        </fieldset>
 
-      <label for="review">Written Review</label>
-      <textarea id="review" name="review" rows="5"></textarea>
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review" rows="5"></textarea>
 
-      <label for="name">Your Name (optional)</label>
-      <input type="text" id="name" name="name">
+        <label for="name">Your Name (optional)</label>
+        <input type="text" id="name" name="name">
 
-      <input type="submit" value="Submit Review">
+        <input type="submit" value="Submit Review">
 
-    </form>
+      </form>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 | WDD 131 | Product Review</p>
+    <p>&copy; <span id="year"></span> | WDD 131 | Product Review</p>
   </footer>
 </body>
 </html>

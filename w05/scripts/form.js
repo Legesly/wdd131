@@ -1,4 +1,4 @@
-// Provided product array
+// Product array used to populate the select
 const products = [
   { id: "fc-1888", name: "Flux Capacitor" },
   { id: "fc-2050", name: "Power Laces" },
@@ -7,12 +7,30 @@ const products = [
   { id: "jj-1969", name: "Warp Equalizer" }
 ];
 
-// Populate select menu
-const productSelect = document.querySelector("#product");
+function populateProducts() {
+  const select = document.querySelector("#product");
+  products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    select.appendChild(option);
+  });
+}
 
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  productSelect.appendChild(option);
+function setMaxDateToday() {
+  const installedInput = document.querySelector("#installed");
+  const today = new Date().toISOString().split("T")[0];
+  installedInput.setAttribute("max", today);
+}
+
+function setCurrentYear() {
+  const yearSpan = document.querySelector("#year");
+  const year = new Date().getFullYear();
+  yearSpan.textContent = year;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  populateProducts();
+  setMaxDateToday();
+  setCurrentYear();
 });
