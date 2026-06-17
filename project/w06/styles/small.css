@@ -1,0 +1,24 @@
+/* Small Screens (Mobile) */
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 0.5rem;
+  }
+
+  section {
+    padding: 0.5rem;
+  }
+
+  form {
+    width: 90%;
+  }
+}
