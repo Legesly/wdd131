@@ -26,7 +26,7 @@ body {
 }
 
 body {
-   font-family: 'Roboto', var(--font-main);
+  font-family: 'Roboto', var(--font-main);
   background-color: var(--bg);
   color: var(--text-main);
   line-height: 1.5;
@@ -62,11 +62,6 @@ header h1 {
   cursor: pointer;
 }
 
-#menu-button:focus-visible {
-  outline: 3px solid #ffffff;
-  outline-offset: 2px;
-}
-
 nav {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -76,7 +71,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none; /* mobile: hidden until hamburger opens */
+  display: none;
   flex-direction: column;
   background-color: var(--nav-bg);
 }
@@ -96,8 +91,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover,
-nav a:focus-visible {
+nav a:hover {
   background-color: var(--nav-hover);
   color: #000000;
 }
@@ -108,10 +102,10 @@ main {
   padding: 0 1rem;
 }
 
-main h2 {
+main h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .gallery {
@@ -132,14 +126,12 @@ figure {
 }
 
 figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 2px solid #ccc;
-    border-radius: var(--radius);
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: var(--radius);
 }
-
-
 
 figcaption {
   padding: 0.75rem 0.9rem;
