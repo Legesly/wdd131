@@ -1,12 +1,18 @@
+/* Larger view — hamburger hidden, horizontal nav, multi-column grid */
 @media only screen and (min-width: 48rem) {
   #menu-button {
     display: none;
+  }
+
+  .header-top {
+    padding-bottom: 0;
   }
 
   nav ul {
     display: flex !important;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   nav li {
@@ -17,8 +23,8 @@
     padding: 0.75rem 1.25rem;
   }
 
-  main h2 {
-    font-size: 1.6rem;
+  main h1 {
+    font-size: 1.8rem;
   }
 
   .gallery {

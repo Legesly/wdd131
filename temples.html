@@ -8,6 +8,7 @@
 
   <title>Temple Album | WDD 131</title>
 
+  <!-- Mobile-first CSS, then large-screen overrides -->
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css">
 
@@ -21,11 +22,11 @@
 <body>
   <header>
     <div class="header-top">
-      <h2>Temple Album</h2>
-      <button id="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <span class="site-title">Temple Album</span>
+      <button id="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
     </div>
 
-    <nav id="primary-nav">
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Old</a></li>
@@ -37,55 +38,53 @@
   </header>
 
   <main>
-    <h1>Temple Picture Album</h1>
+    <h1>Home</h1>
 
     <section class="gallery">
-
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Accra Ghana Temple" width="500" height="343" loading="eager">
+        <figcaption>Accra Ghana Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Aba Nigeria Temple" width="500" height="343" loading="lazy">
+        <figcaption>Aba Nigeria Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Johannesburg South Africa Temple" width="500" height="343" loading="lazy">
+        <figcaption>Johannesburg South Africa Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Bern Switzerland Temple" width="500" height="343" loading="lazy">
+        <figcaption>Bern Switzerland Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Freiberg Germany Temple" width="500" height="343" loading="lazy">
+        <figcaption>Freiberg Germany Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Paris France Temple" width="500" height="343" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Rome Italy Temple" width="500" height="343" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Salt Lake Temple" width="500" height="343" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="images/ghana-small.webp" alt="Ghana Temple">
-        <figcaption>Ghana Temple</figcaption>
+        <img src="images/ghana-small.webp" alt="Campinas Brazil Temple" width="500" height="343" loading="lazy">
+        <figcaption>Campinas Brazil Temple</figcaption>
       </figure>
-
     </section>
   </main>
 
