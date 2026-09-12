@@ -3,47 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghana — Country Page</title>
+  <title>Ghana - WDD 131 Country Page</title>
+  <meta name="description" content="Explore Ghana: country data, weather, and highlights of West Africa's vibrant nation.">
+  <meta name="author" content="Humphrey">
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
-
 <body>
   <header>
     <h1>Ghana</h1>
   </header>
 
   <main>
-    <section class="hero">
+    <div class="hero">
       <picture>
         <source srcset="images/ghana-small.webp" media="(max-width: 500px)">
         <source srcset="images/ghana-medium.webp" media="(max-width: 1000px)">
-        <img src="images/ghana-large.webp" alt="Ghana Landscape">
+        <img
+          src="images/ghana-large.webp"
+          alt="Colorful coastal landscape and culture of Ghana"
+          width="1600"
+          height="900">
       </picture>
-    </section>
 
-    <section class="data">
-      <h2>Data</h2>
-      <ul>
-        <li><strong>Capital:</strong> Accra</li>
-        <li><strong>Population:</strong> 34 million</li>
-        <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
-        <li><strong>Region:</strong> West Africa</li>
-      </ul>
-    </section>
+      <section class="data">
+        <h2>Data</h2>
+        <dl>
+          <dt>Area:</dt>
+          <dd>238,535 sq km</dd>
+          <dt>Population:</dt>
+          <dd>34,121,985</dd>
+          <dt>Capital:</dt>
+          <dd>Accra</dd>
+          <dt>Languages:</dt>
+          <dd>English</dd>
+          <dt>Currency:</dt>
+          <dd>Ghanaian Cedi (GHS)</dd>
+          <dt>Time Zone:</dt>
+          <dd>UTC+0</dd>
+          <dt>Calling Code:</dt>
+          <dd>+233</dd>
+          <dt>Internet TLD:</dt>
+          <dd>.gh</dd>
+        </dl>
+      </section>
 
-    <section class="weather">
-      <h2>Weather <span class="icon"></span></h2>
-
-      <p><strong>Temperature:</strong> <span id="temp">82</span> °F</p>
-      <p><strong>Wind Speed:</strong> <span id="speed">10</span> mph</p>
-      <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
-    </section>
+      <section class="weather">
+        <h2>Weather</h2>
+        <img class="weather-icon" src="images/weather.svg" alt="Sunny weather icon" width="64" height="64">
+        <dl>
+          <dt>Temperature:</dt>
+          <dd>82 &deg;F</dd>
+          <dt>Conditions:</dt>
+          <dd>Sunny</dd>
+          <dt>Wind:</dt>
+          <dd>8 mph</dd>
+          <dt>Wind Chill:</dt>
+          <dd><span id="windchill">N/A</span></dd>
+        </dl>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Ghana Country Page</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&copy;<span id="currentyear"></span> Humphrey - Minnesota</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
