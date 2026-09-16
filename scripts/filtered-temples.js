@@ -1,154 +1,206 @@
-// ------------------------------
-// Temple Data (7 originals + 3 new)
-// ------------------------------
+// Seven course sample temples + three student-added temples
 const temples = [
   {
-    templeName: "Aba Nigeria Temple",
+    templeName: "Aba Nigeria",
     location: "Aba, Nigeria",
-    dedicated: "2005-08-07",
+    dedicated: "2005, August, 7",
     area: 11500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-lds-1024621-wallpaper.jpg"
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
-    templeName: "Accra Ghana Temple",
-    location: "Accra, Ghana",
-    dedicated: "2004-01-11",
-    area: 17500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-lds-1024620-wallpaper.jpg"
+    templeName: "Manti Utah",
+    location: "Manti, Utah, United States",
+    dedicated: "1888, May, 21",
+    area: 74792,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
-    templeName: "Bern Switzerland Temple",
-    location: "Bern, Switzerland",
-    dedicated: "1955-09-11",
-    area: 35500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-lds-1024622-wallpaper.jpg"
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
-    templeName: "Campinas Brazil Temple",
-    location: "Campinas, Brazil",
-    dedicated: "2002-05-17",
-    area: 48000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-lds-1024623-wallpaper.jpg"
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
   },
   {
-    templeName: "Columbia River Washington Temple",
-    location: "Richland, Washington",
-    dedicated: "2001-11-18",
-    area: 16000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/columbia-river-washington-temple/columbia-river-washington-temple-lds-1024624-wallpaper.jpg"
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
   {
-    templeName: "Freiberg Germany Temple",
-    location: "Freiberg, Germany",
-    dedicated: "1985-06-29",
-    area: 21500,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/freiberg-germany-temple/freiberg-germany-temple-lds-1024625-wallpaper.jpg"
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
   },
   {
-    templeName: "Johannesburg South Africa Temple",
-    location: "Johannesburg, South Africa",
-    dedicated: "1985-08-24",
-    area: 19184,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-lds-1024626-wallpaper.jpg"
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
 
-  // ------------------------------
-  // Your 3 NEW temples
-  // ------------------------------
+  // Three temples added for W04
   {
-    templeName: "Paris France Temple",
-    location: "Paris, France",
-    dedicated: "2017-05-21",
-    area: 44175,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-lds-1024630-wallpaper.jpg"
+    templeName: "Accra Ghana",
+    location: "Accra, Ghana",
+    dedicated: "2004, January, 11",
+    area: 17500,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x225/accra-ghana-temple-detail-249022-2400x1200.jpg"
   },
   {
-    templeName: "Rome Italy Temple",
-    location: "Rome, Italy",
-    dedicated: "2019-03-10",
-    area: 40000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-lds-1024631-wallpaper.jpg"
-  },
-  {
-    templeName: "Salt Lake Temple",
-    location: "Salt Lake City, Utah",
-    dedicated: "1893-04-06",
+    templeName: "Salt Lake",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-lds-1024632-wallpaper.jpg"
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
+  },
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",
+    area: 41010,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/1-Rome-Temple-2160936.jpg"
   }
 ];
 
-// ------------------------------
-// Display Function
-// ------------------------------
+function createTempleCard(temple) {
+  const card = document.createElement("article");
+  card.classList.add("card");
+
+  const name = document.createElement("h2");
+  name.textContent = temple.templeName;
+
+  const location = document.createElement("p");
+  location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+
+  const dedicated = document.createElement("p");
+  dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+
+  const area = document.createElement("p");
+  area.innerHTML = `<span class="label">Area:</span> ${temple.area.toLocaleString()} sq ft`;
+
+  const image = document.createElement("img");
+  image.src = temple.imageUrl;
+  image.alt = temple.templeName;
+  image.loading = "lazy";
+  image.width = 400;
+  image.height = 250;
+
+  card.append(name, location, dedicated, area, image);
+  return card;
+}
+
 function displayTemples(list) {
   const container = document.querySelector("#temple-cards");
   container.innerHTML = "";
 
-  list.forEach(temple => {
-    const card = document.createElement("section");
-    card.classList.add("card");
+  if (list.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "empty-message";
+    empty.textContent = "No temples match this filter.";
+    container.appendChild(empty);
+    return;
+  }
 
-    card.innerHTML = `
-      <h3>${temple.templeName}</h3>
-      <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-    `;
-
-    container.appendChild(card);
+  list.forEach((temple) => {
+    container.appendChild(createTempleCard(temple));
   });
 }
 
-// ------------------------------
-// Filter Logic
-// ------------------------------
+function getDedicatedYear(dedicated) {
+  return parseInt(dedicated, 10);
+}
+
 function filterTemples(criteria) {
   let filtered = temples;
+  const titles = {
+    home: "Home",
+    old: "Old",
+    new: "New",
+    large: "Large",
+    small: "Small"
+  };
 
-  if (criteria === "old") {
-    filtered = temples.filter(t => parseInt(t.dedicated) < 1900);
-  } else if (criteria === "new") {
-    filtered = temples.filter(t => parseInt(t.dedicated) > 2000);
-  } else if (criteria === "large") {
-    filtered = temples.filter(t => t.area > 90000);
-  } else if (criteria === "small") {
-    filtered = temples.filter(t => t.area < 10000);
+  switch (criteria) {
+    case "old":
+      filtered = temples.filter((t) => getDedicatedYear(t.dedicated) < 1900);
+      break;
+    case "new":
+      filtered = temples.filter((t) => getDedicatedYear(t.dedicated) > 2000);
+      break;
+    case "large":
+      filtered = temples.filter((t) => t.area > 90000);
+      break;
+    case "small":
+      filtered = temples.filter((t) => t.area < 10000);
+      break;
+    case "home":
+    default:
+      filtered = temples;
+      break;
   }
 
+  document.querySelector("main h1").textContent = titles[criteria] || "Home";
   displayTemples(filtered);
 }
 
-// ------------------------------
-// Navigation Click Events
-// ------------------------------
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const filter = e.target.dataset.filter;
-    filterTemples(filter);
+document.querySelectorAll("[data-filter]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    filterTemples(link.dataset.filter);
+
+    document.querySelectorAll("[data-filter]").forEach((item) => {
+      item.classList.remove("active");
+    });
+    link.classList.add("active");
+
+    const nav = document.querySelector("#primary-nav");
+    const menuButton = document.querySelector("#menu-button");
+    if (nav.classList.contains("open")) {
+      nav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+      menuButton.textContent = "☰";
+    }
   });
 });
 
-// ------------------------------
-// Mobile Menu Toggle
-// ------------------------------
 const menuButton = document.querySelector("#menu-button");
 const nav = document.querySelector("#primary-nav");
 
 menuButton.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", nav.classList.contains("open"));
+  const isOpen = nav.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  menuButton.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+  menuButton.textContent = isOpen ? "✕" : "☰";
 });
 
-// ------------------------------
-// Footer Dates
-// ------------------------------
 document.querySelector("#currentyear").textContent = new Date().getFullYear();
 document.querySelector("#lastmodified").textContent = document.lastModified;
 
-// ------------------------------
-// Initial Load
-// ------------------------------
+document.querySelector('[data-filter="home"]').classList.add("active");
 displayTemples(temples);
