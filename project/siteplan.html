@@ -3,120 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Plan – Ghana Travel Guide</title>
+  <meta name="description" content="Site plan for Ghana Travel Guide: site name, purpose, audience scenarios, color scheme, typography, and home page wireframes.">
+  <meta name="author" content="Humphrey Darko">
+  <title>Site Plan | Ghana Travel Guide</title>
 
-  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 
 <body>
   <header>
-    <h1>Ghana Travel Guide – Site Plan</h1>
-    <p>Your trusted guide to exploring Ghana</p>
+    <div class="logo">
+      <span class="logo-flag" aria-hidden="true"></span>
+      <div>
+        <p class="logo-name">Ghana Travel Guide</p>
+        <p class="tagline">Site Plan</p>
+      </div>
+    </div>
   </header>
 
   <main>
+    <section>
+      <h1>Ghana Travel Guide – Site Plan</h1>
+      <p>This document is the planning blueprint for the Ghana Travel Guide website project.</p>
+    </section>
 
-    <!-- SITE NAME -->
     <section>
       <h2>Site Name</h2>
-      <p><strong>Ghana Travel Guide</strong></p>
-      <p>
-        This name clearly communicates the purpose of the website: to help visitors explore
-        Ghana’s culture, food, attractions, and travel opportunities.
-      </p>
+      <div class="logo logo-sample">
+        <span class="logo-flag" aria-hidden="true"></span>
+        <p class="logo-name">Ghana Travel Guide</p>
+      </div>
+      <p><strong>Ghana Travel Guide</strong> is the site name. It clearly tells visitors that the website helps people explore Ghana, including culture, food, destinations, and travel tips.</p>
       <p><strong>Optional domain:</strong> ghanatravelguide.org</p>
     </section>
 
-    <!-- PURPOSE -->
     <section>
       <h2>Site Purpose</h2>
-      <p>
-        The purpose of this site is to provide reliable, easy‑to‑understand information about
-        traveling in Ghana. Visitors will learn about top destinations, cultural highlights,
-        food recommendations, and travel tips. A simple contact form will allow users to reach
-        out for help or ask questions.
-      </p>
+      <p>The site will provide reliable, easy-to-understand information for people planning a trip to Ghana. Visitors will find destination highlights, cultural information, food recommendations, and travel tips. A contact page will let users ask questions or request help. The finished site will have at least three pages with consistent navigation: Home, About Ghana, and Contact.</p>
     </section>
 
-    <!-- SCENARIOS -->
     <section>
       <h2>Scenarios</h2>
+      <p>These questions represent the target audience: first-time travelers and people curious about Ghana.</p>
       <ul>
         <li>What are the top tourist attractions to visit in Ghana?</li>
         <li>Where can I find authentic Ghanaian food when I visit?</li>
-        <li>How do I contact a local guide for help?</li>
+        <li>How do I contact someone for travel questions or local guidance?</li>
       </ul>
     </section>
 
-    <!-- COLOR SCHEME -->
     <section>
       <h2>Color Scheme</h2>
-      <p><strong>Primary Color:</strong> #C8102E (Ghana Red) – used for headings and accents.</p>
-      <p><strong>Secondary Color:</strong> #006B3F (Ghana Green) – used for buttons and highlights.</p>
-      <p><strong>Neutral Color:</strong> #F2F2F2 – used for background sections.</p>
+      <p>The colors are inspired by the Ghana flag and will be used throughout the site plan and the finished website.</p>
+
+      <div class="swatches">
+        <div class="swatch swatch-red">
+          <p><strong>Primary</strong></p>
+          <p>#C8102E</p>
+          <p>Header background, headings, and accents</p>
+        </div>
+        <div class="swatch swatch-green">
+          <p><strong>Secondary</strong></p>
+          <p>#006B3F</p>
+          <p>Buttons, links, and section borders</p>
+        </div>
+        <div class="swatch swatch-neutral">
+          <p><strong>Neutral</strong></p>
+          <p>#F2F2F2</p>
+          <p>Page background</p>
+        </div>
+      </div>
     </section>
 
-    <!-- TYPOGRAPHY -->
     <section>
       <h2>Typography</h2>
-      <p><strong>Heading Font:</strong> Montserrat – used for all headings.</p>
-      <p><strong>Body Font:</strong> Open Sans – used for paragraphs and general content.</p>
+      <p>Two Google Fonts will be used on the site plan and the finished website.</p>
+      <p class="font-heading-sample">Montserrat – used for headings (h1, h2, h3) and the logo name.</p>
+      <p class="font-body-sample">Open Sans – used for paragraphs, lists, and general body text.</p>
     </section>
 
-    <!-- WIREFRAMES -->
     <section>
       <h2>Wireframes</h2>
+      <p>These sketches show the home page layout. They represent content blocks, not final images or text.</p>
 
       <h3>Mobile View</h3>
-      <pre>
-+---------------------------+
-|        HEADER             |
-|     "Ghana Travel"        |
-+---------------------------+
-|         NAV MENU          |
-|   [Home] [Culture] ...    |
-+---------------------------+
-|        CARD 1             |
-|        Culture            |
-+---------------------------+
-|        CARD 2             |
-|         Food              |
-+---------------------------+
-|        CARD 3             |
-|      Destinations         |
-+---------------------------+
-|          FOOTER           |
-+---------------------------+
-      </pre>
+      <div class="wireframe wireframe-mobile">
+        <div class="wf-block">Header / Logo</div>
+        <div class="wf-block">Navigation</div>
+        <div class="wf-block wf-hero">Hero Image</div>
+        <div class="wf-block">Welcome Text</div>
+        <div class="wf-block">Card: Culture</div>
+        <div class="wf-block">Card: Food</div>
+        <div class="wf-block">Card: Destinations</div>
+        <div class="wf-block">Footer</div>
+      </div>
 
       <h3>Desktop View</h3>
-      <pre>
-+-----------------------------------------------------------+
-|                           HEADER                          |
-|                      "Ghana Travel"                       |
-+-----------------------------------------------------------+
-|                           NAV BAR                         |
-|      Home | Culture | Food | Destinations | Contact       |
-+-----------------------------------------------------------+
-|   CARD 1          |     CARD 2         |     CARD 3       |
-|    Culture        |      Food          |   Destinations   |
-+-----------------------------------------------------------+
-|                           FOOTER                          |
-+-----------------------------------------------------------+
-      </pre>
-
+      <div class="wireframe wireframe-desktop">
+        <div class="wf-block">Header / Logo</div>
+        <div class="wf-block">Navigation: Home | About Ghana | Contact</div>
+        <div class="wf-block wf-hero">Hero Image and Welcome Text</div>
+        <div class="wf-row">
+          <div class="wf-block">Card: Culture</div>
+          <div class="wf-block">Card: Food</div>
+          <div class="wf-block">Card: Destinations</div>
+        </div>
+        <div class="wf-block">Footer</div>
+      </div>
     </section>
-
   </main>
 
   <footer>
-    <p>© 2026 Ghana Travel Guide</p>
+    <p>© 2026 Ghana Travel Guide | Humphrey Darko</p>
   </footer>
-
 </body>
 </html>
