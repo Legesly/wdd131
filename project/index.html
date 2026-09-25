@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ghana Travel Guide helps first-time visitors plan a trip with destination ideas, food tips, cultural notes, and a way to ask questions.">
+  <meta name="author" content="Humphrey Darko">
+  <title>Ghana Travel Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/guide.css">
+  <script src="scripts/guide.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <span class="flag" aria-hidden="true"></span>
+        <p class="brand-name">Ghana Travel Guide</p>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    </div>
+    <nav id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Ghana</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <p class="visit" id="visit-banner"></p>
+
+    <section class="hero">
+      <picture>
+        <source srcset="images/ghana-small.webp" media="(max-width: 500px)">
+        <source srcset="images/ghana-medium.webp" media="(max-width: 1000px)">
+        <img src="images/ghana-large.webp" alt="Independence Arch in Accra, Ghana, with palm trees in front of the monument" width="1600" height="900">
+      </picture>
+      <div class="hero-copy">
+        <h1>Plan a first trip to Ghana</h1>
+        <p class="lead">Ghana Travel Guide gathers practical starting points for people who have not visited before: where to go, what to eat, and how to ask a local question before you book.</p>
+        <a class="button" href="contact.html">Ask a travel question</a>
+      </div>
+    </section>
+
+    <h2 class="section-head">Start here</h2>
+    <div class="cards">
+      <article class="card">
+        <h2>Culture</h2>
+        <p>Festivals, kente cloth, greetings, and the place of chiefs in community life.</p>
+        <p><a href="about.html#culture">Read about culture</a></p>
+      </article>
+      <article class="card">
+        <h2>Food</h2>
+        <p>Jollof, waakye, banku, and the chop bars where travelers actually eat.</p>
+        <p><a href="about.html#food">Find Ghanaian food</a></p>
+      </article>
+      <article class="card">
+        <h2>Destinations</h2>
+        <p>Castles, rainforest, beaches, and Kumasi, with notes on how they fit a short trip.</p>
+        <p><a href="about.html#destinations">See destinations</a></p>
+      </article>
+    </div>
+
+    <h2 class="section-head">Places travelers ask about</h2>
+    <div class="filters" role="group" aria-label="Filter places">
+      <button type="button" class="active" data-filter="all">All</button>
+      <button type="button" data-filter="history">History</button>
+      <button type="button" data-filter="nature">Nature</button>
+      <button type="button" data-filter="coast">Coast</button>
+    </div>
+    <div class="place-list" id="place-list"></div>
+
+    <h2 class="section-head">Before you go</h2>
+    <ul class="tips">
+      <li>English is the official language, and it is widely used in cities and with tour guides.</li>
+      <li>The currency is the Ghana cedi. Carry some cash for markets and smaller chop bars.</li>
+      <li>Cape Coast and Kakum pair well in two days. Kumasi and Mole need more travel time.</li>
+      <li>Ask permission before photographing people, ceremonies, or inside palaces.</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Humphrey Darko, Minnesota</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

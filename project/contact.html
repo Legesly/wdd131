@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Ghana Travel Guide with a question about destinations, food, or trip planning.">
+  <meta name="author" content="Humphrey Darko">
+  <title>Contact | Ghana Travel Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/guide.css">
+  <script src="scripts/guide.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <span class="flag" aria-hidden="true"></span>
+        <p class="brand-name">Ghana Travel Guide</p>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    </div>
+    <nav id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Ghana</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Contact</h1>
+    <p class="lead">Send a question about routes, food, or a place you want to visit. This form is saved in your browser and confirmed on the next page. It does not email a travel agency.</p>
+
+    <form id="inquiry-form" method="get" action="thanks.html">
+      <p class="required-note"><span class="required">*</span> Required fields</p>
+
+      <div class="field">
+        <label for="fullname">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullname" name="fullname" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="destination">Destination <span class="required">*</span></label>
+        <select id="destination" name="destination" required>
+          <option value="" disabled selected>Select a destination ...</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="traveldate">Travel Date</label>
+        <input type="date" id="traveldate" name="traveldate">
+      </div>
+
+      <div class="field">
+        <label for="party">Number of Travelers</label>
+        <input type="number" id="party" name="party" min="1" max="20" value="1">
+      </div>
+
+      <fieldset class="field">
+        <legend>How should we follow up? <span class="required">*</span></legend>
+        <div class="choice">
+          <input type="radio" id="follow-email" name="followup" value="email" required>
+          <label for="follow-email">Email</label>
+        </div>
+        <div class="choice">
+          <input type="radio" id="follow-phone" name="followup" value="phone">
+          <label for="follow-phone">Phone</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Interests</legend>
+        <p class="hint">Check all that apply.</p>
+        <div class="checks">
+          <div class="choice">
+            <input type="checkbox" id="interest-food" name="interests" value="food">
+            <label for="interest-food">Food</label>
+          </div>
+          <div class="choice">
+            <input type="checkbox" id="interest-history" name="interests" value="history">
+            <label for="interest-history">History</label>
+          </div>
+          <div class="choice">
+            <input type="checkbox" id="interest-nature" name="interests" value="nature">
+            <label for="interest-nature">Nature</label>
+          </div>
+          <div class="choice">
+            <input type="checkbox" id="interest-beaches" name="interests" value="beaches">
+            <label for="interest-beaches">Beaches</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="message">Your Question <span class="required">*</span></label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <input type="submit" value="Send Question">
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Humphrey Darko, Minnesota</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
